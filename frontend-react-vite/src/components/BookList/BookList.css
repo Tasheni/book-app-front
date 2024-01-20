@@ -1,0 +1,116 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+  padding: 20px;
+  grid-auto-rows: max-content;
+}
+.book-item {
+  position: relative;
+  background-color: #d7d7d3;
+  padding: 20px;
+}
+
+.icon-container {
+  position: relative;
+  width: 100%;
+  top: 0;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button,
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.book-cover-container {
+  display: flex;
+  justify-content: center;
+}
+
+.book-cover {
+  max-width: 80%;
+  max-height: auto;
+  margin: auto;
+}
+
+.book-info {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.797);
+}
+
+.book-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+
+.book-author {
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.book-list-header {
+  font-size: 90px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.797);
+  font-family: "DM Sans", sans-serif;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+}
+
+.join button {
+  border: black;
+}
+
+.join-item {
+  margin-right: 5px;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  position: relative;
+  width: 100%;
+  top: 0;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-button,
+.cancel-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,126 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem;
+  text-align: center; */
+}
+
+/* Add your CSS styles here */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f4f4f4e2
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*New style*/
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.card-image img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.card-body {
+  display: block; /* Ensure text is displayed in block style */
+  padding: 1rem; /* Add padding for better readability */
+}
+
+.card-text {
+  margin-bottom: 0.5rem; /* Add spacing between text paragraphs */
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.modal{
+  background-color: green;
+}
+
+
+/* HomePage.css */
+
+.falling-books-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  width: 50px; /* Adjust book width as needed */
+  height: 70px; /* Adjust book height as needed */
+  background-color: #3498db; /* Adjust book color as needed */
+  margin: 0 auto;
+  animation: fallingBooks 1s ease-in-out forwards;
+}
+
+@keyframes fallingBooks {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
