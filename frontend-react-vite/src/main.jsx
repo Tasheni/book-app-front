@@ -19,15 +19,13 @@ reactRoot.render(
     <Router>
     <Navbar />
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<BookList />} />
         <Route path="/bookList" element={<BookList/>}/>
         <Route path="/book/:title" element={<BookDetail />}  />
         <Route path="/charts" element={<Charts />}  />
         <Route path="/books" element={<BookList />} />
-
-
       </Routes>
       <Footer />
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

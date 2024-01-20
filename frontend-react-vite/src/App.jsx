@@ -9,15 +9,7 @@ function App() {
   return (
     <>
     <div className="container">
-      <nav>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <Link to={`/bookList`}>Book List</Link>
-          <Link to={`/charts`}>Charts</Link>
-        </ul>
-      </nav>
+     
     </div>
     
     </>
@@ -25,5 +17,7 @@ function App() {
 }
 
 export default App;
+
+
 
 
